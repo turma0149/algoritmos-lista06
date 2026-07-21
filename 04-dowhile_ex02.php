@@ -19,10 +19,9 @@ do {
     //flag: 0-azul, 1-vermelho, 2-preto, 3-prata  
     $corCarroMontado = rand(0, 1);
     $valorCarroMontado = rand(70000, 10000);
-    $valorCarroMontado = number_format($valorCarroMontado,2,",",".");
-
-    echo("Cor do carro: $corCarroMontado . <br>");
-    echo("Valor do carro R$: $valorCarroMontado . <br>");
+    
+    echo ("Cor do carro: $corCarroMontado . <br>");
+    echo ("Valor do carro R$:" . number_format($valorCarroMontado, 2, ",", ".")  . "<br>");
 
     if ($corCarroMontado == 1) {
         $qtdCarrosVermelhos++;
@@ -32,12 +31,9 @@ do {
     //flag de saída : 0(F) ou 1(V)
     $continuar = rand(0, 1);
 
-    echo("Deseja continuar: $continuar <br>");
-    echo("<hr>");
+    echo ("Deseja continuar: $continuar <br>");
+    echo ("<hr>");
 } while ($continuar == 1);
 
-echo("Quantidade de carros vermelhos numberFormat($qtdCarrosVermelhos) <br>");
-echo("Valor total de carros vermelhos R$:" .  number_format($somaVlrCarVerm,2,",",".") . "<br>");
-
-
-?>
+echo ("Quantidade de carros vermelhos numberFormat($qtdCarrosVermelhos) <br>");
+echo ("Valor total de carros vermelhos R$:" .  number_format($somaVlrCarVerm, 2, ",", ".") . "<br>");
