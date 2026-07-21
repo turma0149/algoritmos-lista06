@@ -20,8 +20,8 @@ do {
     $corCarroMontado = rand(0, 3);
     $valorCarroMontado = rand(70000, 10000);
 
-    echo("Cor do carro: $corCarroMontado .");
-    echo("Valor do carro: $valorCarroMontado .");
+    echo("Cor do carro: $corCarroMontado . <br>");
+    echo("Valor do carro: $valorCarroMontado . <br>");
 
     if ($corCarroMontado == 1) {
         $qtdCarrosVermelhos++;
@@ -31,9 +31,12 @@ do {
     //flag de saída : 0(F) ou 1(V)
     $continuar = rand(0, 1);
 
-    echo("Deseja continuar: $continuar");
+    echo("Deseja continuar: $continuar <br>");
+    echo("<hr>");
 } while ($continuar == 1);
 
-echo("Quantidade de carros vermelhos: $qtdCarrosVermelhos");
-echo("Valor total de carros vermelhos R$: $somaVlrCarVerm");
+echo("Quantidade de carros vermelhos: $qtdCarrosVermelhos <br>");
+echo("Valor total de carros vermelhos R$: $somaVlrCarVerm <br>");
 
+
+?>
